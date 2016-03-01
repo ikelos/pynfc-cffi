@@ -87,7 +87,7 @@ int nfc_device_get_information_about(nfc_device *pnd, char **buf);
 const char *str_nfc_modulation_type(const nfc_modulation_type nmt);
 const char *str_nfc_baud_rate(const nfc_baud_rate nbr);
 int str_nfc_target(char **buf, const nfc_target *pnt, bool verbose);
-""")
+""", packed = True)
 
 if __name__ == "__main__":
     ffi.compile()
